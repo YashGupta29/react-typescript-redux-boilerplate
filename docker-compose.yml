@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  client:
+    build: 
+      dockerfile: Dockerfile
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - ./usr/src/app/node_modules 
+    env_file:
+      - .env
+    stdin_open: true  
+    ports:
+      - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLING=true
+    command: npm start

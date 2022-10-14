@@ -1,0 +1,60 @@
+.btn{
+    border: 1px solid transparent;
+    padding: .5rem 1.2rem;
+    border-radius: .3rem;
+    box-shadow: 0 .1rem .4rem rgba(0, 0, 0, 0.3);
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: all .4s ease;
+    position: relative;
+}
+
+/* .btn:hover{
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+} */
+
+.btn.btn-outlined{
+    border-color: var(--black);
+    background-color: transparent;
+    color: var(--black);
+}
+
+/* .btn.btn-outlined:hover{
+    border-color: transparent;
+    color: var(--white);
+    background-color: var(--primary);
+} */
+
+.btn.btn-full{
+    width: 100%;
+}
+
+.btn.btn-with-icon-end{
+    padding-right: 2rem;
+}
+
+.btn.btn-with-icon-start{
+    padding-left: 2rem;
+}
+
+.btn-icon{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.btn-icon-end{
+    right: 4%;
+}
+
+.btn-icon-start{
+    left: 4%;
+}
